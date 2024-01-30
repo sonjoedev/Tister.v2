@@ -93,12 +93,12 @@ sidebar.classList.remove("animateopm")})
  document.body.classList.remove("Sunset")
  document.body.classList.add("normal")}
  
- if(tselectedoption=="bluehills"){
+ if(tselectedoption=="Bluehills"){
    document.body.classList.remove("Waterlilies")
   document.body.classList.remove("Winter")
  document.body.classList.remove("normal")
  document.body.classList.remove("Sunset")
- document.body.classList.add("bluehills")}
+ document.body.classList.add("Bluehills")}
  
   if(tselectedoption=="Sunset"){
     document.body.classList.remove("Waterlilies")
