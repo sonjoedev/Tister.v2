@@ -89,36 +89,36 @@ sidebar.classList.remove("animateopm")})
  if(tselectedoption=="normal"){
   document.body.classList.remove("Waterlilies")
   document.body.classList.remove("Winter")
- document.body.classList.remove("Bluehills")
+ document.body.classList.remove("bluehills")
  document.body.classList.remove("Sunset")
  document.body.classList.add("normal")}
  
- if(tselectedoption=="Bluehills"){
+ if(tselectedoption=="bluehills"){
    document.body.classList.remove("Waterlilies")
   document.body.classList.remove("Winter")
  document.body.classList.remove("normal")
  document.body.classList.remove("Sunset")
- document.body.classList.add("Bluehills")}
+ document.body.classList.add("bluehills")}
  
   if(tselectedoption=="Sunset"){
     document.body.classList.remove("Waterlilies")
   document.body.classList.remove("Winter")
  document.body.classList.remove("normal")
- document.body.classList.remove("Bluehills")
+ document.body.classList.remove("bluehills")
  document.body.classList.add("Sunset")}
  
   if(tselectedoption=="Waterlilies"){
   document.body.classList.remove("Winter")
  document.body.classList.remove("normal")
  document.body.classList.remove("Sunset")
-   document.body.classList.remove("Bluehills")
+   document.body.classList.remove("bluehills")
  document.body.classList.add("Waterlilies")}
  
   if(tselectedoption=="Winter"){
  document.body.classList.remove("Waterlilies")
  document.body.classList.remove("normal")
    document.body.classList.remove("Sunset")
- document.body.classList.remove("Bluehills")
+ document.body.classList.remove("bluehills")
  document.body.classList.add("Winter")}
  }
 
