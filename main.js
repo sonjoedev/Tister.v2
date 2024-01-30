@@ -45,7 +45,7 @@ document.getElementById("score").innerHTML=("Computer Score" + " = " + c + "</br
 document.getElementById("cguess").innerHTML=("Computer Guess Was" + " = " + y)
 var ts= p-c
 var testscore= ts*=100
-document.getElementById("tests").innerHTML=("Test Progress: " + testscore)
+document.getElementById("tests").innerHTML=( testscore)
 
 //history log
 var para = document.createElement("P")
