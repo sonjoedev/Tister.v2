@@ -227,6 +227,7 @@ body{
 position:relative;
 background-color: var(--clr-bg);
 background-repeat:no-repeat;
+ background-size:cover;
 background-image:var(--bg-image);
 background-attachment:fixed;
 min-height:100%;
