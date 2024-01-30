@@ -229,7 +229,7 @@ background-color: var(--clr-bg);
 background-repeat:no-repeat;
 background-image:var(--bg-image);
 background-attachment:fixed;
-min-height:100vh;
+min-height:100%;
 } 
 img{
  max-height:100%;
