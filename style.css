@@ -229,7 +229,10 @@ background-image:var(--bg-image);
 background-attachment:fixed;
 min-height:100vh;
 } 
-
+img{
+ height:100%;
+ width:100%;
+}
 .sidebar{
 opacity:var(--opacity-value);
 z-index:1000;
