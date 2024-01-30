@@ -69,10 +69,10 @@
 --clr-shadow:;
 } 
 
- .Bluehills{
+ .bluehills{
 --opacity-value:.97;
 
---bg-image: url(Bluehills.jpg);
+--bg-image: url(bluehills.jpg);
 
 --clr-header:#004659;
 
