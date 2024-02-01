@@ -316,37 +316,53 @@ var divismove = false
 var intialX,intialY,offsetX,offsetY
 const defaultLeft= hdivelem.style.left
 const defaultTop = hdivelem.style.top
-hdivelem.addEventListener(("mousedown"),startDrag)
-hdivelem.addEventListener(("mouseup"),endDrag)
-hdivelem.addEventListener(("mouseleave"),endDrag)
-hdivelem.addEventListener(("mousemove"),dragDiv)
 
-function startDrag(e){
-divismove = true
-intialX = e.clientX
-intialY = e.clientY
-offsetX = hdivelem.offsetLeft
-offsetY = hdivelem.offsetTop
-hdivelem.style.cursor = "grabbing"
+hdivelem.addEventListener('mousedown', startDrag);
+hdivelem.addEventListener('touchstart', startDrag);
+hdivelem.addEventListener('mouseup', endDrag);
+hdivelem.addEventListener('mouseleave', endDrag);
+hdivelem.addEventListener('touchend', endDrag);
+hdivelem.addEventListener('touchcancel', endDrag);
+hdivelem.addEventListener('mousemove', dragDiv);
+hdivelem.addEventListener('touchmove', dragDiv, { passive: false });
+function startDrag(e) {
+  divismove = true;
+  if (e.type === 'mousedown') {
+    initialX = e.clientX;
+    initialY = e.clientY;
+  } else if (e.type === 'touchstart') {
+    initialX = e.touches[0].clientX;
+    initialY = e.touches[0].clientY;
+  }
+  offsetX = hdivelem.offsetLeft;
+  offsetY = hdivelem.offsetTop;
+  
+  hdivelem.style.cursor = 'grabbing';
 }
 
-function endDrag(){
-divismove = false
-hdivelem.style.cursor = "pointer"
+function endDrag() {
+  divismove = false;
+  hdivelem.style.cursor = 'grab';
 }
 
-function dragDiv(e){
-if(!divismove) return
-e.preventDefault()
+function dragDiv(e) {
+  if !divismove return;
+  e.preventDefault();
 
-const dx = e.clientX - intialX
-const dy = e.clientY - intialY
-const newX = offsetX + dx
-const newY = offsetY + dy
-
-hdivelem.style.left = newX + "px"
-hdivelem.style.top = newY + "px"
-}
+  if (e.type === 'mousemove') {
+    moveX = e.clientX;
+    moveY = e.clientY;
+  } else if (e.type === 'touchmove') {
+    moveX = e.touches[0].clientX;
+    moveY = e.touches[0].clientY;
+  }
+  const dx = moveX - initialX;
+  const dy = moveY - initialY;
+  const newX = offsetX + dx;
+  const newY = offsetY + dy;
+  hdivelem.style.left = newX + 'px';
+  hdivelem.style.top = newY + 'px';
+ 
 
 function returnToDefault(){
 hdivelem.style.left = defaultLeft
