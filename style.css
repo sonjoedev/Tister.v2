@@ -580,6 +580,7 @@ opacity:0.3;
  #themark{color:#630000}
  
   .leaderboard{
+   opacity:0.3px;
  background:var(--clr-sidebarbgsclr);
  position:absolute;
  top:50%;
