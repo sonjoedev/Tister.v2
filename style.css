@@ -579,7 +579,7 @@ opacity:0.3;
 }
  
   .about{
- font-size:20;
+ font-size:17;
  padding:5%;
  background:var(--clr-sidebarbgsclr);
  position:absolute;
@@ -592,7 +592,7 @@ opacity:0.3;
  opacity:var(--opacity-value);
  transition:all 1s ease-in-out;
  color:#383636;
- letter-spacing:1px;
+ letter-spacing:.3px;
  padding-top:2%;
  }
  .about p{ cursor:none;}
