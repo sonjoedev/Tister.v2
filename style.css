@@ -72,7 +72,7 @@
  .bluehills{
 --opacity-value:.97;
 
---bg-image: url(Bluehills.jpg);
+--bg-image: url(bluehills.jpg);
 
 --clr-header:#004659;
 
@@ -202,7 +202,7 @@
 
 --clr-sidebarabg:#538CFF;
 
---clr-btnhb:#0D1BB4
+--clr-btnhb:#0D1BB4;
 
 --clr-sidebarahover:#F7FFFF;
 
