@@ -748,7 +748,7 @@ color:darkred;
  }
 
 
-/* @media (max-width:341px) and (min-width:311px) {
+@media (max-width:341px) and (min-width:311px) {
 *{font-size:13px;}
 
 .sidebar{width:135px;}
@@ -791,7 +791,7 @@ height:50px;}
 
 
 
-@media (orientation:landscape) {} */
+@media (orientation:landscape) {}
 
 
 
