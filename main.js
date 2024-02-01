@@ -346,7 +346,7 @@ function endDrag() {
 }
 
 function dragDiv(e) {
-  if !divismove return;
+  if (!divismove) return;
   e.preventDefault();
 
   if (e.type === 'mousemove') {
@@ -362,7 +362,7 @@ function dragDiv(e) {
   const newY = offsetY + dy;
   hdivelem.style.left = newX + 'px';
   hdivelem.style.top = newY + 'px';
- 
+}
 
 function returnToDefault(){
 hdivelem.style.left = defaultLeft
