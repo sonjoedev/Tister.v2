@@ -595,7 +595,10 @@ opacity:0.3;
  letter-spacing:.3px;
  padding-top:2%;
  }
- .about p{ cursor:none;}
+ .about p{
+  position: absolute;
+  top:0;
+  cursor:none;}
  #t-tests{color:#921D1D}
  #help{color:#8DBC53;}
  #luck{color:#15E108;}
