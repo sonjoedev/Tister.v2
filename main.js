@@ -359,7 +359,7 @@ function loadingL(){
 console.log("noo")
 setTimeout(function(){
 loadingLdiv.classList.add("end-ing")
-},3000)}
+},2500)}
 
 
 
