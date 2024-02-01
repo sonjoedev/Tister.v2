@@ -581,7 +581,7 @@ opacity:0.5;
  
   .about{
  font-size:17;
- padding:5%;
+ padding:10%;
  background:var(--clr-sidebarbgsclr);
  position:absolute;
  top:50%;
@@ -594,7 +594,7 @@ opacity:0.5;
  transition:all 1s ease-in-out;
  color:#383636;
  letter-spacing:.3px;
- padding-top:10%;
+ padding-top:15%;
  }
  .about p{cursor:none;}
  #t-tests{color:#921D1D}
